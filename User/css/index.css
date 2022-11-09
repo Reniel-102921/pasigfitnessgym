@@ -1,0 +1,833 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1b1c1e;
+}
+
+
+/* Slides */
+.carousel-caption{
+  z-index: auto;
+  height: 45vh;
+  margin-bottom: 40vh;
+  padding-top: 10vh;
+  background: rgba( 255, 255, 255, 0.01 );
+  box-shadow: 0 8px 50px 0 rgba( 31, 38, 135, 0.20 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.60 );
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+}
+.carousel-control-prev {
+  z-index: auto;
+}
+
+.carousel-control-next {
+  z-index: auto;
+}
+
+/* About */
+.about{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.aboutText{
+  height: 62vh;
+  width:90vh;
+  max-width: 100%;
+  border-radius: 10px;
+  border-left: 5px black solid;
+  border-bottom: 5px black solid;
+  border-top: 2px black solid;
+  border-right: 2px black solid;
+  text-align: justify;
+  margin-top: 10vh;
+  padding: 5vh;
+  color: #dbdbdb;
+  display: inline-block;
+  justify-content: center;
+}
+.aboutText img{
+ height: 20vh;
+ position: absolute;
+}
+.aboutText h1{
+ padding-top: 5vh;
+ margin-left: 25vh;
+ font-weight: bolder;
+ font-family: 'Playfair Display SC', serif;
+}
+.aboutText p{
+ margin-left: 5vh;
+ margin-top: 50px;
+ text-indent: 15vh;
+ font-size: 20px;
+}
+.aboutText a{
+  margin-left: 60vh;
+}
+.img-animation{
+  display: inline-block;
+  padding: 50px;
+}
+
+.man{
+  width: 80%;
+  max-width: 100%;
+  height: auto;
+}
+
+.modelAbout1{
+   animation: infinite;
+   animation-name: modelAbout1;
+   animation-duration: 2s;
+   animation-fill-mode: both;
+ }
+ @keyframes modelAbout1 {
+   from {top: 100vh;}
+   to {top: 90vh;}
+ }
+
+ /* GOAL */
+ .focus{
+   width: 100%;
+   background-color: #f6f6f6;
+   text-align: center;
+   height: 100%;
+   padding-bottom: 10vh;
+   padding-top: 10vh;
+ }
+ .focus h5{
+  padding-top: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+ }
+ .focus h1{
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bolder;
+  color: #ff9f0f;
+  padding-bottom: 30px;
+ }
+ .card{
+   border: 1px gray groove;
+   height: 43vh;
+   border-radius: 10px;
+   width: 50vh;
+   display: inline-block;
+   margin-bottom: 20px;
+   margin-right: 20px;
+   position: relative;
+   text-align: justify;
+ }
+ .card:hover{
+  border: 1px white groove;
+  border-bottom: 5px #ff9f0f solid;
+  z-index: 1;
+  transform: scale(1.1);
+  color: #ff9f0f;
+  transition-duration: 0.5s;
+ }
+   /* plan/membership */
+   .plan{
+   height: 85vh;
+   background-color: #1b1c1e;
+   background-repeat: no-repeat;
+   padding-top: 7vh;
+   }
+   .planTitle h1{
+   font-weight: bolder;
+   margin-top: 30px;
+   margin-bottom: 50px;
+   color: white;
+   text-align: center;
+   position: relative;
+   font-family: 'Playfair Display SC', serif;
+   }
+   .planTitle h1:after{
+   content: '';
+   position: absolute;
+   width: 400px;
+   height: 4px;
+   background-color: #ff9f0f;
+   bottom: -20px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   }
+   .planImg img{
+   margin-top: 5vh;
+   height: 60vh;
+   width: 80vh;
+   margin-left: 800px;
+   position: absolute;
+   }
+   .planPrice{
+   width: 80vh;
+   height: 60vh;
+   background-color: #2e2e2e;
+   position: absolute;
+   text-align: center;
+   margin-left: 35vh;
+   padding-top: 10px;;
+   margin-top: 5vh;
+   color: white;
+   }
+   .planPrice h1{
+   font-family: 'Playfair Display SC', serif;
+   }
+   .planPrice p{
+   font-size: 20px;
+   font-family: 'Josefin Sans', sans-serif;
+   }
+   .planTitle h1:after{
+   content: '';
+   position: absolute;
+   width: 350px;
+   height: 4px;
+   background-color: #ff9f0f;
+   bottom: -20px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   }
+
+   /* PRODUCTS */
+   .products{
+    margin-top: 30px;
+    padding-top: 30px;
+    background-color: #f6f6f6;
+    height: 570px;
+   }
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+   }
+   .products_container{
+    padding: 20px;
+    width: 85%;
+   }
+   .productsTitle h1{
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    margin-bottom: 50px;
+    color: black;
+   font-family: 'Playfair Display SC', serif;
+   font-weight: bolder;
+   }
+   .productsTitle h1:after{
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 4px;
+    background-color: #ff9f0f;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+   }
+   .slider .item{/*container per item*/
+    height: 290px;
+    border-radius: 8px;
+    border: 2px solid #d1d1d1;
+    padding: 10px;
+    display: inline-block;
+
+   }
+   .slider .slick-slide{
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .slick-dots li.slick-active button:before{
+    color: #ff9f0f;
+   }
+   .slick-dots li button:before{
+    font-size: 12px;
+    color: gray;
+   }
+   .slick-next:before{
+    color: #ff9f0f;
+    font-size: 40px;
+    z-index: auto;
+   }
+   .slick-prev:before{
+    color: #ff9f0f;
+    font-size: 40px;
+    z-index: auto;
+   }
+   .hoverButton{
+     opacity: 0;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     -ms-transform: translate(-50%, -50%);
+     text-align: center;
+   }
+   .item:hover{
+    display:block;
+    transition: all ease 0.3s;
+    transform: scale(1.1);
+    border: 2px solid #ff9f0f;
+    transition-duration: 0.5s;
+   }
+   .item:hover .item-img{
+     opacity: 30%
+   }
+   .item:hover .hoverButton{
+     opacity: 100%;
+   }
+   .item h1{/*bodybuilding*/
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Playfair Display SC', serif;
+   }
+   .item-img1{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 170px;
+   }
+   .item-img2{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 170px;
+   }
+   .item-img3{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 200px;
+   }
+   .item-img4{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 160px;
+   }
+   .item-img5{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 180px;
+   }
+   .item-img6{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 160px;
+   }
+   .item-img7{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 160px;
+   }
+   .item-img8{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 180px;
+   }
+   .item-img9{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 160px;
+   }
+   .item-img10{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 160px;
+   }
+   .item-img11{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 180px;
+   }
+   .item-img12{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 190px;
+    width: 160px;
+   }
+   
+   .hoverButton button{
+     color: white;
+    position: relative;
+    height: 45px;
+    width: 120px;
+    font-size: 16px;
+    background-image: linear-gradient(to right, #bd6500, #ffc480);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bolder;
+   }
+   .hoverButton button:hover{
+    z-index:1;
+    transform: scale(1.1);
+    background-color: #ff9f0f;
+    height: 45px;
+    width: 120px;
+    border: 1px white solid;
+    color: white;
+   }
+
+     /*FOOTER*/
+  .footer-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    background-color: #141414;
+  }
+/* content 1 */
+  .footer-content1 {
+    color: white;
+    display: inline-block;
+    padding: 40px 50px 10px 50px;
+  }
+
+  .footer-content1 p{
+    color: white;
+    display: block;
+    text-align: left;
+    font-size: 10px;
+    padding-top: 20px;
+  }
+
+  .footer-content1 div h1{
+    font-size: 14px;
+    padding: 50px 0px 10px 0px;
+    text-align: left;
+    display: inline-block;
+  }
+
+  .footer-content div img{
+    display: inline-block;
+    height: 100px;
+  }
+
+/* content 2 */
+  .footer-content2 h1{
+    font-size: 17px;
+    color: white;
+    padding-bottom: 20px;
+  }
+
+  .footer-content2 {
+    padding: 50px;
+    float: left;
+  }
+
+  .footer-content2 a {
+    text-decoration: none !important;
+    color: #f6f6f6;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer-content2 p{
+    color: #f6f6f6;
+    font-size: 12px;
+    padding: none;
+    margin: none;
+  }
+/* content 3 */
+  .footer-content3 h1{
+    font-size: 17px;
+    color: white;
+    padding-bottom: 20px;
+  }
+
+  .footer-content3 {
+    padding: 50px;
+    float: left;
+  }
+
+  .footer-content3 a {
+    text-decoration: none !important;
+    color: #f6f6f6;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer-content3 p{
+    color: #f6f6f6;
+    font-size: 12px;
+    padding: none;
+    margin: none;
+  }
+
+  /* content 4 */
+  .footer-content4 h1{
+    font-size: 17px;
+    color: white;
+    padding-bottom: 20px;
+  }
+
+  .footer-content4 {
+    padding: 50px;
+    float: left;
+  }
+
+  .footer-content4 a {
+    text-decoration: none !important;
+    color: #f6f6f6;
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .footer-content4 p{
+    color: #f6f6f6;
+    font-size: 12px;
+    padding: none;
+    margin: none;
+  }
+
+  .copyright{
+    color: white;
+    font-size: 15px;
+  }
+
+  .footer-line {
+    height: 1px;
+    max-height: 100%;
+    width: 50%;
+    max-width: 100%;
+    background-color: white;
+    display: block;
+    margin: auto;
+  }
+
+/* mobile */
+  @media screen and (min-width: 300px) and (max-width: 600px){
+    .footer-content1{
+      display: none;
+    }
+  }
+
+ /* medium screen */
+
+@media screen and (max-width: 1120px){
+  /* slide */
+  .carousel-caption{
+    height: 45vh;
+    margin-bottom: 10vh;
+    padding-top: 10vh;
+    background: rgba( 255, 255, 255, 0.01 );
+    box-shadow: 0 8px 50px 0 rgba( 31, 38, 135, 0.20 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.60 );
+  }
+  .carousel-caption h1{
+    font-size: 25px;
+
+  }
+  /* about */
+  .about{
+    height: auto;
+  }
+  .img-animation{
+    display: none;
+  }
+   .aboutText{
+     height: 50vh;
+     color: white;
+     width: 80vh;
+     margin-top: 5vh;
+     margin-bottom: 5vh;
+     padding: 5vh;
+   }
+   .aboutText img{
+    height: 15vh;
+    position: absolute;
+   }
+   .aboutText h1{
+    padding-top: 5vh;
+    margin-left: 20vh;
+    font-weight: bolder;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 25px;
+   }
+   .aboutText p{
+    margin-left: 2vh;
+    margin-top: 50px;
+    text-indent: 15vh;
+    font-size: 15px;
+   }
+   .aboutText a{
+     margin-left: 50vh;
+   }
+   /* PLAN */
+   .planImg img{
+   margin-top: 5vh;
+   height: 60vh;
+   width: 70vh;
+   margin-left: 400px;
+   position: absolute;
+   }
+   .planPrice{
+   width: 55vh;
+   height: 60vh;
+   margin-left: 10vh;
+   }
+   .planTitle h1:after{
+   content: '';
+   position: absolute;
+   width: 250px;
+   height: 4px;
+   background-color: #ff9f0f;
+   bottom: -20px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   }
+   /* PRODUCT */
+   .service_container{
+    padding: 10px;
+    width: 93%;
+   }
+   .slider{/*ung pinaka slider*/
+    margin-right: 20px;
+    height: 40vh;
+   }
+   .slider .item{/*container per item*/
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid #d1d1d1;
+    padding: 10px;
+    width: 150px;
+    display: inline-block;
+   }
+   .slider .slick-slide{
+    margin: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+   }
+   .item img{
+    border-radius: 10px;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    height: 20vh;
+    width: 33vh;
+    padding-right: 10px;
+   }
+
+   .footer-content1{
+    display: none;
+  }
+
+  .footer-container-mobile{
+    display: flex;
+  }
+
+}
+
+/* small screen */
+
+@media screen and (max-width: 768px){
+  /* slide */
+  .carousel-caption{
+    height: 27vh;
+    margin-bottom: 5vh;
+    padding-top: 3vh;
+    background: rgba( 255, 255, 255, 0.01 );
+    box-shadow: 0 8px 50px 0 rgba( 31, 38, 135, 0.20 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.60 );
+  }
+  .carousel-caption h1{
+    font-size: 20px;
+  }
+  .carousel-caption p{
+    font-size: 10px;
+  }
+  /* About */
+  .about{
+    height: 60vh;
+  }
+  .img-animation{
+    margin-left:0;
+    opacity: 0;
+  }
+  .aboutText{
+    height: 53vh;
+    color: white;
+    width: 70vh;
+    margin-left:0;
+    margin-top: 5vh;
+    padding: 5vh;
+  }
+  .aboutText h1{
+   padding-top: 5vh;
+   margin-left: 20vh;
+   font-weight: bolder;
+   font-family: 'Playfair Display SC', serif;
+   font-size: 25px;
+  }
+  .aboutText p{
+   margin-left: 0;
+   margin-top: 50px;
+   text-indent: 15vh;
+   font-size: 15px;
+  }
+  .aboutText a{
+    margin-left: 40vh;
+  }
+   /* FOCUS */
+  .focus{
+    height: 100%;
+  }
+  /* PLAN */
+  .planImg img{
+  margin-top: 5vh;
+  height: 60vh;
+  width: 50vh;
+  margin-left: 200px;
+  position: absolute;
+  }
+  .planPrice{
+  width: 35vh;
+  height: 60vh;
+  margin-left: 3vh;
+  }
+  .planTitle h1:after{
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 4px;
+  background-color: #ff9f0f;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  }
+  /* PRODUCT */
+  .service_container{
+   padding: 10px;
+   margin-left: 0;
+   width: 100%;
+  }
+  .serviceTitle h1:after{
+   content: '';
+   position: absolute;
+   width: 300px;
+   height: 4px;
+   background-color: #ff9f0f;
+   bottom: -20px;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+  }
+  .slider{/*ung pinaka slider*/
+   margin-right: 15px;
+   margin-left: 25px;
+   height: 40vh;
+   width: 90%;
+  }
+  .slider .item{/*container per item*/
+   height: 150px;
+   border-radius: 8px;
+   border: 2px solid #d1d1d1;
+   padding: 5px;
+   width: 150px;
+   display: inline-block;
+  }
+  .slider .slick-slide{
+   margin: 10px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+  }
+  .item img{
+   border-radius: 10px;
+   opacity: 1;
+   display: block;
+   transition: .5s ease;
+   height: 16vh;
+   width: 18vh;
+   padding-right: 0;
+  }
+  .slick-next:before{
+   color: #ff9f0f;
+   font-size: 30px;
+   z-index: auto;
+  }
+  .slick-prev:before{
+   color: #ff9f0f;
+   font-size: 30px;
+   z-index: auto;
+  }
+
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+
+  .footer-content,
+  ul,
+  li {
+    width: 100%;
+  }
+
+  .footer-content a {
+    /* display: block; */
+    font-size: 10px;
+  }
+
+  .footer-content{
+    padding: none;
+    margin: none;
+  }
+
+  .footer-line{
+    width: 80%;
+  }
+}
