@@ -1,0 +1,370 @@
+body{
+  margin: 0;
+  background-color: #010101;
+}
+.menu-dashboard{
+  position: absolute;
+}
+.menu{
+  height: 100%;
+  background-color: #171717;
+  position: fixed;
+  padding: 0;
+}
+.menu-top{
+  background-color: #f07116;
+  height: 70px;
+}
+.menu-top i{
+  color: #1b1c1e;
+  font-size: 35px;
+  margin-top: 17px;
+  margin-left: 16px;
+  position: absolute;
+}
+.menu-top p{
+  color: #f0f0f0;
+  font-size: 17px;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 68px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: bold;
+}
+.menu-icon th{
+  height: 10px;
+  color: #dbdbdb;
+  font-weight: bold;
+  font-size: 17px;
+  padding-top: 1px;
+  padding-left: 5px;
+}
+.menu-icon td{
+  color: #919191;
+  font-size: 16px;
+}
+.menu-icon td:hover{
+  background-color: #f07116;
+  font-weight: bold;
+}
+.menu-icon p{
+  color: #e8e8e8;
+  padding-left: 60px;
+  padding-top: 7px;
+}
+.menu-icon i{
+  padding-left: 20px;
+  color: #a3a3a3;
+  font-size: 20px;
+  position: absolute;
+  padding-top: 10px;
+}
+.menu-icon a{
+  text-decoration: none;
+}
+.progress{
+  margin-left: 310px;
+  height: 250px;
+  background-color: gray;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+.barchart-container{
+  padding-top: 310px;
+  padding-left: 223px;
+  position:relative;
+  width: 1400px;
+  margin-left: 98px;
+  margin-top: 15px;
+}
+
+.summaryHeader{
+  font-size: 20px;
+  color: #e8e8e8;
+  margin-bottom: 20px;
+}
+.barchart{
+  background-color: pink;
+  height: 360px;
+  margin-right: 30px;
+  border-radius: 30px;
+  padding-top: 20px;
+}
+.piechart{
+  height: 240px;
+  width: 400px;
+  border-radius: 30px;
+  margin-top: 450px;
+  position: absolute;
+  margin-left: 940px;
+  background-color: #1b1c1e;
+}
+.legendRegistered{
+  margin-top: 20px;
+  background-color: #282928;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  border: 1px white solid;
+}.legendRegisteredPaid{
+  margin-top: 20px;
+  background-color: #41e83f;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  border: 1px white solid;
+}
+.legend p{
+  color: #e8e8e8;
+  }
+
+/*TIME*/
+.dateTime{
+  width: 400px;
+  height: 105px;
+  border-radius: 30px;
+  background-color: #f07116;
+  color: #f0f0f0;
+  box-shadow: 0 0 10px #f07116;
+  margin-left: 2px;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.date{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 600;
+}
+.dateTime:hover{
+  background-color: #f0f0f0;
+  color: #1b1c1e;
+}
+.time{
+  font-size: 40px;
+  letter-spacing: 3px;
+  justify-content: center;
+  text-align: center;
+}
+.time span:not(:last-child){
+  position: relative;
+  margin: 0 6px;
+  font-weight:600;
+  text-align: center;
+  letter-spacing: 3px;
+}
+.time span:last-child{
+  font-size: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10px;
+  padding: 0 5px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  color: #1b1c1e;
+}
+.enrolled{
+  /* width: 1140px; */
+  width: 77%;
+  margin-left: 305px;
+  margin-top: 50px;
+  height: 650px;
+  font-family: 'Playfair Display SC', serif;
+  background-color: #171717;
+  border-radius: 30px;
+  padding-left: 35px;
+  padding-top: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 5px #2e2e2e;
+}
+.enrolled h1{
+  color: #f77e28;
+  font-size: 25px;
+  font-weight: bold;
+}
+.enrolled h1::after{
+  background-color: white;
+  width: 1070px;
+  height: 1px;
+  content: ' ';
+  position: absolute;
+  margin-top: 54px;
+  left: 0;
+}
+.logout{
+  margin-top: 120px;
+  padding-top: 12px;
+  padding-left: 16px;
+  height: 50px;
+}
+.logout:hover{
+  background-color: #202020;
+  font-weight: bolder;
+}
+.logout i{
+  font-size: 25px;
+  position: absolute;
+}
+.logout p{
+  position: absolute;
+  margin-left: 45px;
+  font-size: 17px;
+  color: #f0f0f0;
+}
+/*SEARCH AND DATABASE*/
+.search button{
+  border-radius: 10px;
+  background-color: #f77e28;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+  margin-left: 6px;
+}
+.search button:hover{
+  z-index: auto;
+  transform: scale(1.1);
+  color: white;
+  font-weight: bold;
+}
+.search input{
+  height:37px;
+  margin-top:5px;
+  margin-right:2px;
+  border-radius:5px;
+  margin-left: 20px;
+}
+.database{
+  width: 72%;
+  overflow: auto;
+  height: 525px;
+  position: absolute;
+  margin-top: 70px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.database-table{
+  width: 100%;
+   /* width:1050px; */
+   border: 1 solid black;
+   background-color: #202020;
+}
+.database-table td{
+  border-bottom: 1px solid #7a7a7a;
+  font-size: 17px;
+  text-align: center;
+  color: white;
+  font-family: 'Martel Sans', sans-serif;
+  height: 50px;
+}
+.database-table th{
+  border-bottom: 1px solid #7a7a7a;
+  background-color: #f77e28;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  font-weight: 500px;
+  font-family: 'Adamina', serif;
+  height: 50px;
+}
+.database tr{
+  height: 40px;
+  color: black;
+  background-color: #2e2e2e;
+}
+.database tr:hover{
+  background-color: #f77e28;
+  color: white;
+}
+.database-table a{
+  text-decoration: none;
+  color: white;
+}
+.insertCustomer{
+  display: none;
+  padding-left: 200px;
+}
+.insertForm{
+  margin-left: 500px;
+  background-color: blue;
+  font-size: 20px;
+  height: 200px;
+  width: 500px;
+}
+.logout{
+  margin-top: 120px;
+  padding-top: 12px;
+  padding-left: 16px;
+  height: 50px;
+}
+.logout:hover{
+  background-color: #202020;
+  font-weight: bolder;
+}
+.logout i{
+  font-size: 25px;
+  position: absolute;
+}
+.logout p{
+  position: absolute;
+  margin-left: 45px;
+  font-size: 17px;
+  color: #f0f0f0;
+}
+
+/*INSERT CUSTOMER*/
+.modal-content{
+  width: 800px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 40px black;
+}
+
+.modal-header{
+  background-color: #f07116;
+  border: 2px solid black;
+  height: 50px;
+}
+.modal-body label{
+  font-weight: bold;
+  font-family: 'Playfair Display SC', serif;
+  margin-left: 30px;
+}
+.modal-body input{
+  width: 200px;
+  border-radius: 5px;
+  margin-right: 50px;
+}
+.modal-body select{
+  width: 150px;
+  border-radius: 5px;
+}
+.modal-body button{
+  margin-top: 40px;
+  margin-left: 300px;
+  width: 190px;
+  height: 45px;
+  background-color: #f07116;
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.modal-body button:hover{
+  z-index: auto;
+  transform: scale(1.1);
+  color: white;
+  font-weight: bold;
+}
+.modal-header .close{
+  border-radius: 5px;
+  color: #f07116;
+  background-color: white;
+  font-weight: bolder;
+}
+.headingAddClient{
+  font-size: 30px;
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+  font-weight: bold;
+}
